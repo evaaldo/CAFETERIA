@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { ContainerComponent } from '../container/container.component';
-import { WelcomeComponent } from '../welcome/welcome.component';
-import { ProductComponent } from '../product/product.component';
-import { ContainerProductsComponent } from '../container-products/container-products.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { ProductComponent } from './product/product.component';
+import { ContainerProductsComponent } from './container-products/container-products.component';
 
 @Component({
   selector: 'app-list-products',

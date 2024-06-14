@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
-import { WelcomeComponent } from './Components/welcome/welcome.component';
-import { ProductComponent } from './Components/product/product.component';
+import { WelcomeComponent } from './Components/list-products/welcome/welcome.component';
+import { ProductComponent } from './Components/list-products/product/product.component';
 import { ContainerComponent } from './Components/container/container.component';
-import { ContainerProductsComponent } from './Components/container-products/container-products.component';
+import { ContainerProductsComponent } from './Components/list-products/container-products/container-products.component';
 
 @Component({
   selector: 'app-root',
