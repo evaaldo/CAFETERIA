@@ -7,6 +7,7 @@ import { WelcomeComponent } from './Components/list-products/welcome/welcome.com
 import { ProductComponent } from './Components/list-products/product/product.component';
 import { ContainerComponent } from './Components/container/container.component';
 import { ContainerProductsComponent } from './Components/list-products/container-products/container-products.component';
+import { FooterComponent } from './Components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ import { ContainerProductsComponent } from './Components/list-products/container
     WelcomeComponent,
     ProductComponent,
     ContainerComponent,
-    ContainerProductsComponent
+    ContainerProductsComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

@@ -5,7 +5,7 @@ import { ListOrdersComponent } from './Components/list-orders/list-orders.compon
 export const routes: Routes = [
   {
     path: "",
-    redirectTo: "list-orders",
+    redirectTo: "list-products",
     pathMatch: "full"
   },
   {

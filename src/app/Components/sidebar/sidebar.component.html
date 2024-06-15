@@ -12,7 +12,7 @@
           </p>
       </div>
       <ul id="side_items">
-        <li class="side-item active">
+        <li class="side-item" [ngClass]="{'active': isActive('/list-products')}">
           <a href="/list-products">
               <i class="fa-solid fa-cart-plus"></i>
               <span class="item-description">
@@ -20,7 +20,7 @@
               </span>
           </a>
       </li>
-          <li class="side-item">
+          <li class="side-item" [ngClass]="{'active': isActive('/list-orders')}">
               <a href="/list-orders">
                   <i class="fa-solid fa-bell"></i>
                   <span class="item-description">
@@ -28,8 +28,8 @@
                   </span>
               </a>
           </li>
-          <li class="side-item">
-              <a href="#">
+          <li class="side-item" [ngClass]="{'active': isActive('/location')}">
+              <a href="/location">
                   <i class="fa-solid fa-map-pin"></i>
                   <span class="item-description">
                       Onde estamos?
