@@ -19,8 +19,10 @@
       </div>
     </div>
     <app-container-products>
-      @for (product of productsList; track product.id) {
-        <app-product [titulo]="product.titulo" [preco]="product.preco" [urlImagem]="product.urlImagem"></app-product>
+      @for (letter of alphabet; track letter) {
+        @for (product of filterProductsByInitialLetter(letter); track product.id) {
+          <app-product [titulo]="product.titulo" [preco]="product.preco" [urlImagem]="product.urlImagem"></app-product>
+        }
       }
     </app-container-products>
   </app-container>

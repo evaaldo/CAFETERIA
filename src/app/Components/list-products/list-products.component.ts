@@ -31,15 +31,21 @@ import products from './products.json'
 export class ListProductsComponent {
   productsList: Product[] = products;
   filterByText: string = "";
+  alphabet: string = "abcdefghijklmnopqrstuvwxyz"
   filteredProducts: Product[] = this.productsList;
 
-  filterProductsByText(): void {
+  filterProductsByText(): Product[] {
     if (!this.filterByText) {
-      this.filteredProducts = this.productsList;
-    } else {
-      this.filteredProducts = this.productsList.filter(product =>
-        product.titulo.toLowerCase().includes(this.filterByText.toLowerCase())
-      );
+      return this.productsList;
     }
+    return this.productsList.filter(product => {
+      return product.titulo.toLowerCase().includes(this.filterByText.toLowerCase());
+    })
+  }
+
+  filterProductsByInitialLetter(letter: string): Product[] {
+    return this.filterProductsByText().filter(product => {
+      return product.titulo.toLowerCase().startsWith(letter);
+    })
   }
 }
