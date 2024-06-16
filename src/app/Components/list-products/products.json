@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "titulo":"Café Cerrado Mineiro",
+    "preco":"20.12",
+    "urlImagem":"../../../assets/imagens/cerrado-mineiro.jpeg"
+  },
+  {
+    "id": 2,
+    "titulo":"Café Extraforte",
+    "preco":"12.90",
+    "urlImagem":"../../../assets/imagens/cafe-extraforte.jpg"
+  },
+  {
+    "id": 3,
+    "titulo":"Café Descafeinado",
+    "preco":"16.70",
+    "urlImagem":"../../../assets/imagens/cafe-descafeinado.jpeg"
+  },
+  {
+    "id": 4,
+    "titulo":"Café Estrada Real",
+    "preco":"25.35",
+    "urlImagem":"../../../assets/imagens/cafe-estrada-real.jpeg"
+  }
+]
